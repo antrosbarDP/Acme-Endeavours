@@ -1,6 +1,5 @@
 package acme.entities.tasks;
 
-import java.time.Duration;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
@@ -63,7 +62,7 @@ public class Task extends DomainEntity {
 
 	// Derived attributes -----------------------------------------------------
 	
-	protected Duration workload;
+	protected Double workload;
 	
 	protected Long executionPeriod;
 	
