@@ -1,0 +1,3 @@
+timestamp,test-class,test-method,time,description,result
+2021-08-24 19:02:06.973,acme.testing.PanicTest,positivePanic,1878,"positivePanic()",OK
+2021-08-24 19:02:07.836,acme.testing.PanicTest,negativePanic,451,"negativePanic()",OK
