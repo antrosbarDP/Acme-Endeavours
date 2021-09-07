@@ -1,0 +1,12 @@
+timestamp,test-class,test-method,time,description,result
+2021-08-30 16:53:25.178,acme.testing.authenticated.task.AuthenicatedTaskListTest,list,55133,"[1] recordIndex=0, title=Task 01, description=This is task 01, executionPeriod=30, link=http://www.moreinfo.something.com, workloadHours=3, workloadMinutes=null, workload=3.00",OK
+2021-08-30 16:54:06.465,acme.testing.authenticated.task.AuthenicatedTaskListTest,list,35563,"[2] recordIndex=1, title=Task 11, description=This is task 11, executionPeriod=61, link=http://www.moreinfo.something.com, workloadHours=4, workloadMinutes=null, workload=4.00",OK
+2021-08-30 16:54:40.068,acme.testing.authenticated.task.AuthenicatedTaskListTest,list,29814,"[3] recordIndex=2, title=Task 21, description=This is task 21, executionPeriod=30, link=null, workloadHours=20, workloadMinutes=null, workload=20.00",OK
+2021-08-30 16:55:13.183,acme.testing.authenticated.task.AuthenicatedTaskListTest,list,30226,"[4] recordIndex=3, title=Task 31, description=This is task 31, executionPeriod=91, link=null, workloadHours=8, workloadMinutes=33, workload=8.55",OK
+2021-08-30 16:55:49.144,acme.testing.authenticated.task.AuthenicatedTaskListTest,list,32510,"[5] recordIndex=4, title=Task 41, description=This is task 41, executionPeriod=30, link=null, workloadHours=13, workloadMinutes=30, workload=13.50",OK
+2021-08-30 16:56:27.333,acme.testing.authenticated.task.AuthenicatedTaskListTest,list,32340,"[6] recordIndex=5, title=Task 51, description=This is task 51, executionPeriod=61, link=http://www.moreinfo.something.com, workloadHours=1, workloadMinutes=55, workload=1.92",OK
+2021-08-30 16:57:01.405,acme.testing.authenticated.task.AuthenicatedTaskListTest,list,28240,"[7] recordIndex=6, title=Task 61, description=This is task 61, executionPeriod=60, link=http://www.moreinfo.something.com, workloadHours=50, workloadMinutes=5, workload=50.08",OK
+2021-08-30 16:59:08.43,acme.testing.authenticated.manager.AuthenticatedManagerCreateTest,becomeManager,53053,"becomeManager()",OK
+2021-08-30 17:00:25.197,acme.testing.PanicTest,positivePanic,11354,"positivePanic()",OK
+2021-08-30 17:00:30.56,acme.testing.PanicTest,negativePanic,2616,"negativePanic()",OK
+2021-08-30 17:02:36.416,acme.testing.administrator.dashboard.AdministratorDashboardTest,showDashboard,37123,"showDashboard()",OK
