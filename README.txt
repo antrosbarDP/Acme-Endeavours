@@ -2,7 +2,7 @@
 #
 
 
-This is Acme-Work-Plans, an application to manage work plans from Acme from Acme Work-Plans, Inc
+This is Acme-Endeavours, an application to manage endeavours from Acme from Acme Endeavours, Inc
 
 https://github.com/antrosbarDP/Acme-Work-Plans
 https://github.com/antrosbarDP/Acme-Work-Plans/releases/tag/D02

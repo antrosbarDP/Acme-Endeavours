@@ -19,109 +19,13 @@
 
 	<import resource="classpath:/WEB-INF/population/conversion-service.xml"/>	
 	
-	<bean name="shout01" class="acme.entities.shouts.Shout">
-		<property name="moment" value="2021/01/23 23:59"  />
-		<property name="author" value="Juan Perez" />
-		<property name="text" value="hola" />
-		<property name="link" value="http://www.example.org"/>
-	</bean>
 	
-	<bean name="shout02" class="acme.entities.shouts.Shout">
-		<property name="moment" value="2021/01/23 23:59"  />
-		<property name="author" value="Leonardo Dicaprio" />
-		<property name="text" value="buenos días" />
-		<property name="link" value="http://www.example.org"/>
-	</bean>
 	
-	<bean name="shout03" class="acme.entities.shouts.Shout">
-		<property name="moment" value="2021/01/23 23:59"  />
-		<property name="author" value="Joe Biden" />
-		<property name="text" value="Me aburro" />
-		<property name="link"><null/></property>
-	</bean>
-	
-	<bean name="shout04" class="acme.entities.shouts.Shout">
-		<property name="moment" value="2021/01/23 23:59"  />
-		<property name="author" value="Angela Merkel" />
-		<property name="text" value="Algo que decir" />
-		<property name="link"><null/></property>
-	</bean>
-	
-	<bean name="shout05" class="acme.entities.shouts.Shout">
-		<property name="moment" value="2021/01/23 23:59"  />
-		<property name="author" value="Angelina Jolie" />
-		<property name="text" value="NOOOOOOOO" />
-		<property name="link" ><null/></property>
-	</bean>
-	
-	<bean name="shout06" class="acme.entities.shouts.Shout">
-		<property name="moment" value="2021/01/23 23:59"  />
-		<property name="author" value="Miss X" />
-		<property name="text" value="YES" />
-		<property name="link" value="http://www.example.org"/>
-	</bean>
-	
-	<bean name="shout07" class="acme.entities.shouts.Shout">
-		<property name="moment" value="2021/01/23 23:59"  />
-		<property name="author" value="Jane Doe" />
-		<property name="text" value="q passssa?" />
-		<property name="link" value="http://www.example.org"/>
-	</bean>
-	
-	<bean name="shout11" class="acme.entities.shouts.Shout">
-		<property name="moment" value="2021/08/23 23:59"  />
-		<property name="author" value="Juan Perez" />
-		<property name="text" value="hola" />
-		<property name="link" value="http://www.example.org"/>
-	</bean>
-	
-	<bean name="shout12" class="acme.entities.shouts.Shout">
-		<property name="moment" value="2021/08/23 23:59"  />
-		<property name="author" value="Leonardo Dicaprio" />
-		<property name="text" value="buenos días" />
-		<property name="link" value="http://www.example.org"/>
-	</bean>
-	
-	<bean name="shout13" class="acme.entities.shouts.Shout">
-		<property name="moment" value="2021/08/23 23:59"  />
-		<property name="author" value="Joe Biden" />
-		<property name="text" value="Me aburro" />
-		<property name="link"><null/></property>
-	</bean>
-	
-	<bean name="shout14" class="acme.entities.shouts.Shout">
-		<property name="moment" value="2021/08/23 23:59"  />
-		<property name="author" value="Angela Merkel" />
-		<property name="text" value="Algo que decir" />
-		<property name="link"><null/></property>
-	</bean>
-	
-	<bean name="shout15" class="acme.entities.shouts.Shout">
-		<property name="moment" value="2021/08/23 23:59"  />
-		<property name="author" value="Angelina Jolie" />
-		<property name="text" value="NOOOOOOOO" />
-		<property name="link" ><null/></property>
-	</bean>
-	
-	<bean name="shout16" class="acme.entities.shouts.Shout">
-		<property name="moment" value="2021/08/23 23:59"  />
-		<property name="author" value="Miss X" />
-		<property name="text" value="YES" />
-		<property name="link" value="http://www.example.org"/>
-	</bean>
-	
-	<bean name="shout17" class="acme.entities.shouts.Shout">
-		<property name="moment" value="2021/08/23 23:59"  />
-		<property name="author" value="Jane Doe" />
-		<property name="text" value="q passssa?" />
-		<property name="link" value="http://www.example.org"/>
-	</bean>
-	
-	<bean name="task01" class="acme.entities.tasks.Task">
+	<bean name="duty01" class="acme.entities.duties.Duty">
 		<property name="executionPeriodStart" value="2021/9/25 12:00"  />
 		<property name="executionPeriodEnd" value="2021/10/25 15:00"  />
-		<property name="title" value="Task 01" />
-		<property name="description" value="This is task 01" />
+		<property name="title" value="Duty 01" />
+		<property name="description" value="This is duty 01" />
 		<property name="link" value="http://www.moreinfo.something.com"/>
 		<property name="isPublic" value="true"/>
 		<property name="isFinished" value="true"/>
@@ -129,11 +33,11 @@
 		<property name="workloadMinutes" ><null/></property>
 	</bean>
 	
-	<bean name="task11" class="acme.entities.tasks.Task">
+	<bean name="duty11" class="acme.entities.duties.Duty">
 		<property name="executionPeriodStart" value="2021/9/25 12:00"  />
 		<property name="executionPeriodEnd" value="2021/11/25 12:00"  />
-		<property name="title" value="Task 11" />
-		<property name="description" value="This is task 11" />
+		<property name="title" value="Duty 11" />
+		<property name="description" value="This is duty 11" />
 		<property name="link" value="http://www.moreinfo.something.com"/>
 		<property name="isPublic" value="true"/>
 		<property name="isFinished" value="true"/>
@@ -141,11 +45,11 @@
 		<property name="workloadMinutes" ><null/></property>
 	</bean>
 	
-	<bean name="task21" class="acme.entities.tasks.Task">
+	<bean name="duty21" class="acme.entities.duties.Duty">
 		<property name="executionPeriodStart" value="2021/9/25 12:00"  />
 		<property name="executionPeriodEnd" value="2021/10/25 21:00"  />
-		<property name="title" value="Task 21" />
-		<property name="description" value="This is task 21" />
+		<property name="title" value="Duty 21" />
+		<property name="description" value="This is duty 21" />
 		<property name="link" ><null/></property>
 		<property name="isPublic" value="true"/>
 		<property name="isFinished" value="true"/>
@@ -153,11 +57,11 @@
 		<property name="workloadMinutes" ><null/></property>
 	</bean>
 	
-	<bean name="task31" class="acme.entities.tasks.Task">
+	<bean name="duty31" class="acme.entities.duties.Duty">
 		<property name="executionPeriodStart" value="2021/9/25 12:00"  />
 		<property name="executionPeriodEnd" value="2021/12/25 20:00"  />
-		<property name="title" value="Task 31" />
-		<property name="description" value="This is task 31" />
+		<property name="title" value="Duty 31" />
+		<property name="description" value="This is duty 31" />
 		<property name="link" ><null/></property>
 		<property name="isPublic" value="true"/>
 		<property name="isFinished" value="true"/>
@@ -165,11 +69,11 @@
 		<property name="workloadMinutes" value="33"/>
 	</bean>
 	
-	<bean name="task41" class="acme.entities.tasks.Task">
+	<bean name="duty41" class="acme.entities.duties.Duty">
 		<property name="executionPeriodStart" value="2021/9/25 12:00"  />
 		<property name="executionPeriodEnd" value="2021/10/25 16:00"  />
-		<property name="title" value="Task 41" />
-		<property name="description" value="This is task 41" />
+		<property name="title" value="Duty 41" />
+		<property name="description" value="This is duty 41" />
 		<property name="link" ><null/></property>
 		<property name="isPublic" value="true"/>
 		<property name="isFinished" value="true"/>
@@ -177,11 +81,11 @@
 		<property name="workloadMinutes" value="30"/>
 	</bean>
 	
-	<bean name="task51" class="acme.entities.tasks.Task">
+	<bean name="duty51" class="acme.entities.duties.Duty">
 		<property name="executionPeriodStart" value="2021/9/25 12:00"  />
 		<property name="executionPeriodEnd" value="2021/11/25 12:00"  />
-		<property name="title" value="Task 51" />
-		<property name="description" value="This is task 51" />
+		<property name="title" value="Duty 51" />
+		<property name="description" value="This is duty 51" />
 		<property name="link" value="http://www.moreinfo.something.com"/>
 		<property name="isPublic" value="true"/>
 		<property name="isFinished" value="true"/>
@@ -189,11 +93,11 @@
 		<property name="workloadMinutes" value="55"/>
 	</bean>
 	
-	<bean name="task61" class="acme.entities.tasks.Task">
+	<bean name="duty61" class="acme.entities.duties.Duty">
 		<property name="executionPeriodStart" value="2021/9/25 12:00"  />
 		<property name="executionPeriodEnd" value="2021/11/25 8:00"  />
-		<property name="title" value="Task 61" />
-		<property name="description" value="This is task 61" />
+		<property name="title" value="Duty 61" />
+		<property name="description" value="This is duty 61" />
 		<property name="link" value="http://www.moreinfo.something.com"/>
 		<property name="isPublic" value="true"/>
 		<property name="isFinished" value="true"/>
@@ -201,11 +105,11 @@
 		<property name="workloadMinutes" value="05"/>
 	</bean>
 	
-	<bean name="task02" class="acme.entities.tasks.Task">
+	<bean name="duty02" class="acme.entities.duties.Duty">
 		<property name="executionPeriodStart" value="2021/9/25 12:00"  />
 		<property name="executionPeriodEnd" value="2021/10/25 12:00"  />
-		<property name="title" value="Task 2" />
-		<property name="description" value="This is task 2" />
+		<property name="title" value="Duty 2" />
+		<property name="description" value="This is duty 2" />
 		<property name="link"><null/></property>
 		<property name="isPublic" value="false"/>
 		<property name="isFinished" value="true"/>
@@ -213,11 +117,11 @@
 		<property name="workloadMinutes" value="50"/>
 	</bean>
 	
-	<bean name="task03" class="acme.entities.tasks.Task">
+	<bean name="duty03" class="acme.entities.duties.Duty">
 		<property name="executionPeriodStart" value="2021/10/25 12:00"  />
 		<property name="executionPeriodEnd" value="2021/11/25 12:00"  />
-		<property name="title" value="Task 3" />
-		<property name="description" value="This is task 3" />
+		<property name="title" value="Duty 3" />
+		<property name="description" value="This is duty 3" />
 		<property name="link" value="http://www.optional.link.com"/>
 		<property name="isPublic" value="true"/>
 		<property name="isFinished" value="true"/>
@@ -225,11 +129,11 @@
 		<property name="workloadMinutes"><null/></property>
 	</bean>
 	
-	<bean name="task04" class="acme.entities.tasks.Task">
+	<bean name="duty04" class="acme.entities.duties.Duty">
 		<property name="executionPeriodStart" value="2021/11/25 12:00"  />
 		<property name="executionPeriodEnd" value="2021/12/25 12:00"  />
-		<property name="title" value="Task 4" />
-		<property name="description" value="This is task 4" />
+		<property name="title" value="Duty 4" />
+		<property name="description" value="This is duty 4" />
 		<property name="link" value="http://www.website.com"/>
 		<property name="isPublic" value="false"/>
 		<property name="isFinished" value="false"/>
@@ -238,11 +142,11 @@
 	</bean>
 	
 	
-	<bean name="task05" class="acme.entities.tasks.Task">
+	<bean name="duty05" class="acme.entities.duties.Duty">
 		<property name="executionPeriodStart" value="2021/9/25 12:00"  />
 		<property name="executionPeriodEnd" value="2021/10/25 15:00"  />
-		<property name="title" value="Task 05" />
-		<property name="description" value="This is task 05" />
+		<property name="title" value="Duty 05" />
+		<property name="description" value="This is duty 05" />
 		<property name="link" value="http://www.moreinfo.something.com"/>
 		<property name="isPublic" value="true"/>
 		<property name="isFinished" value="false"/>
@@ -250,11 +154,11 @@
 		<property name="workloadMinutes" ><null/></property>
 	</bean>
 	
-	<bean name="task15" class="acme.entities.tasks.Task">
+	<bean name="duty15" class="acme.entities.duties.Duty">
 		<property name="executionPeriodStart" value="2021/9/25 12:00"  />
 		<property name="executionPeriodEnd" value="2021/11/25 12:00"  />
-		<property name="title" value="Task 15" />
-		<property name="description" value="This is task 15" />
+		<property name="title" value="Duty 15" />
+		<property name="description" value="This is duty 15" />
 		<property name="link" value="http://www.moreinfo.something.com"/>
 		<property name="isPublic" value="true"/>
 		<property name="isFinished" value="false"/>
@@ -262,11 +166,11 @@
 		<property name="workloadMinutes" ><null/></property>
 	</bean>
 	
-	<bean name="task25" class="acme.entities.tasks.Task">
+	<bean name="duty25" class="acme.entities.duties.Duty">
 		<property name="executionPeriodStart" value="2021/9/25 12:00"  />
 		<property name="executionPeriodEnd" value="2021/10/25 21:00"  />
-		<property name="title" value="Task 25" />
-		<property name="description" value="This is task 25" />
+		<property name="title" value="Duty 25" />
+		<property name="description" value="This is duty 25" />
 		<property name="link" ><null/></property>
 		<property name="isPublic" value="true"/>
 		<property name="isFinished" value="false"/>
@@ -274,11 +178,11 @@
 		<property name="workloadMinutes" ><null/></property>
 	</bean>
 	
-	<bean name="task35" class="acme.entities.tasks.Task">
+	<bean name="duty35" class="acme.entities.duties.Duty">
 		<property name="executionPeriodStart" value="2021/9/25 12:00"  />
 		<property name="executionPeriodEnd" value="2021/12/25 20:00"  />
-		<property name="title" value="Task 35" />
-		<property name="description" value="This is task 35" />
+		<property name="title" value="Duty 35" />
+		<property name="description" value="This is duty 35" />
 		<property name="link" ><null/></property>
 		<property name="isPublic" value="true"/>
 		<property name="isFinished" value="false"/>
@@ -286,11 +190,11 @@
 		<property name="workloadMinutes" value="33"/>
 	</bean>
 	
-	<bean name="task45" class="acme.entities.tasks.Task">
+	<bean name="duty45" class="acme.entities.duties.Duty">
 		<property name="executionPeriodStart" value="2021/9/25 12:00"  />
 		<property name="executionPeriodEnd" value="2021/10/25 16:00"  />
-		<property name="title" value="Task 45" />
-		<property name="description" value="This is task 45" />
+		<property name="title" value="Duty 45" />
+		<property name="description" value="This is duty 45" />
 		<property name="link" ><null/></property>
 		<property name="isPublic" value="true"/>
 		<property name="isFinished" value="false"/>
@@ -298,11 +202,11 @@
 		<property name="workloadMinutes" value="30"/>
 	</bean>
 	
-	<bean name="task55" class="acme.entities.tasks.Task">
+	<bean name="duty55" class="acme.entities.duties.Duty">
 		<property name="executionPeriodStart" value="2021/9/25 12:00"  />
 		<property name="executionPeriodEnd" value="2021/11/25 12:00"  />
-		<property name="title" value="Task 55" />
-		<property name="description" value="This is task 55" />
+		<property name="title" value="Duty 55" />
+		<property name="description" value="This is duty 55" />
 		<property name="link" value="http://www.moreinfo.something.com"/>
 		<property name="isPublic" value="true"/>
 		<property name="isFinished" value="false"/>
@@ -310,11 +214,11 @@
 		<property name="workloadMinutes" value="55"/>
 	</bean>
 	
-	<bean name="task65" class="acme.entities.tasks.Task">
+	<bean name="duty65" class="acme.entities.duties.Duty">
 		<property name="executionPeriodStart" value="2021/9/25 12:00"  />
 		<property name="executionPeriodEnd" value="2021/11/25 8:00"  />
-		<property name="title" value="Task 65" />
-		<property name="description" value="This is task 65" />
+		<property name="title" value="Duty 65" />
+		<property name="description" value="This is duty 65" />
 		<property name="link" value="http://www.moreinfo.something.com"/>
 		<property name="isPublic" value="true"/>
 		<property name="isFinished" value="false"/>
@@ -322,58 +226,58 @@
 		<property name="workloadMinutes" value="05"/>
 	</bean>
 	
-	<bean name="manager1UserAccount" class="acme.framework.entities.UserAccount">
-		<property name="username" value="manager1" />
-		<property name="password" value="manager1" />
+	<bean name="officer1UserAccount" class="acme.framework.entities.UserAccount">
+		<property name="username" value="officer1" />
+		<property name="password" value="officer1" />
 		<property name="enabled" value="true" />
 		<property name="identity">
 			<bean class="acme.datatypes.UserIdentity">
 				<property name="name" value="Jimmy" />
 				<property name="surname" value="Carter" />
-				<property name="email" value="manager1@acme.com" />
+				<property name="email" value="officer1@acme.com" />
 			</bean>
 		</property>
 		<property name="roles">
 			<list>
-				<ref bean="manager1Manager" />
-				<ref bean="manager1Authenticated" />
+				<ref bean="officer1Officer" />
+				<ref bean="officer1Authenticated" />
 			</list>
 		</property>
 	</bean>
 	
-	<bean name="manager1Manager" class="acme.entities.roles.Manager">
-		<property name="userAccount" ref="manager1UserAccount" />
+	<bean name="officer1Officer" class="acme.entities.roles.Officer">
+		<property name="userAccount" ref="officer1UserAccount" />
 	</bean>
 	
-	<bean name="manager1Authenticated" class="acme.framework.entities.Authenticated">
-		<property name="userAccount" ref="manager1UserAccount" />
+	<bean name="officer1Authenticated" class="acme.framework.entities.Authenticated">
+		<property name="userAccount" ref="officer1UserAccount" />
 	</bean>
 	
-	<bean name="manager2UserAccount" class="acme.framework.entities.UserAccount">
-		<property name="username" value="manager2" />
-		<property name="password" value="manager2" />
+	<bean name="officer2UserAccount" class="acme.framework.entities.UserAccount">
+		<property name="username" value="officer2" />
+		<property name="password" value="officer2" />
 		<property name="enabled" value="true" />
 		<property name="identity">
 			<bean class="acme.datatypes.UserIdentity">
 				<property name="name" value="Ronald" />
 				<property name="surname" value="Reagan" />
-				<property name="email" value="manager2@acme.com" />
+				<property name="email" value="officer2@acme.com" />
 			</bean>
 		</property>
 		<property name="roles">
 			<list>
-				<ref bean="manager2Manager" />
-				<ref bean="manager2Authenticated" />
+				<ref bean="officer2Officer" />
+				<ref bean="officer2Authenticated" />
 			</list>
 		</property>
 	</bean>
 	
-	<bean name="manager2Manager" class="acme.entities.roles.Manager">
-		<property name="userAccount" ref="manager2UserAccount" />
+	<bean name="officer2Officer" class="acme.entities.roles.Officer">
+		<property name="userAccount" ref="officer2UserAccount" />
 	</bean>
 	
-	<bean name="manager2Authenticated" class="acme.framework.entities.Authenticated">
-		<property name="userAccount" ref="manager2UserAccount" />
+	<bean name="officer2Authenticated" class="acme.framework.entities.Authenticated">
+		<property name="userAccount" ref="officer2UserAccount" />
 	</bean>
 
 </beans>

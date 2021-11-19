@@ -1,5 +1,5 @@
-recordIndex,author,text,link
-7,Paco Gonzalez,jajajajajaja,http://www.example.com
-8,Nadie,Así sí,http://www.example.com
-9,Mr Bean,Así no,
-10,The Lord of the Flies,Whatever,
+recordIndex,author,text,link,tracker,deadline,budget,important
+7,Paco Gonzalez,jajajajajaja,http://www.example.com,21-1009-68,2021/11/09 14:15,EUR 48.23,true
+8,Nadie,Así sí,http://www.example.com,21-1009-69,2021/11/09 14:16,USD 25.24,false
+9,Mr Bean,Así no,,21-1009-70,2021/11/09 14:17,GBP 29.00,true
+10,The Lord of the Flies,Whatever,,21-1009-71,2021/11/09 14:18,EUR 50.00,false

@@ -16,7 +16,7 @@ master.banner.background = #FFE97F
 
 master.welcome.title = ¡Bienvenidos!
 master.welcome.text = \
-	¡Bienvenidos a Acme Work Plans!  Para todas sus necesidades de planficación.
+	¡Bienvenidos a Acme Endeavours!  La mejor forma de gestionar sus esfuerzos.
 
 # master.menu #################################################################
 
@@ -30,17 +30,16 @@ master.menu.sign-out = Salir
 master.menu.anonymous = Anónimo
 master.menu.anonymous.shout.create = Crear Shouts
 master.menu.anonymous.shout.list = Lista de Shouts
-master.menu.anonymous.task.list = Lista de tareas
+master.menu.anonymous.duty.list = Lista de deberes
 
 # master.menu.authenticated #######################################################
 
 master.menu.authenticated = Usuario
-master.menu.authenticated.task.list = Lista de Tareas
+master.menu.authenticated.duty.list = Lista de deberes
 
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
-master.menu.administrator.dashboard = Panel de indicadores
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.populate-initial = Poblar BD (inicial)
 master.menu.administrator.populate-sample = Poblar BD (ejemplos)
@@ -52,8 +51,8 @@ master.menu.administrator.dashboard = Estadísticas
 
 master.menu.user-account = Cuenta
 master.menu.user-account.general-data = Datos generales
-master.menu.user-account.manager = Datos de manager
-master.menu.user-account.become-manager = Hazte manager
+master.menu.user-account.officer = Datos de oficial
+master.menu.user-account.become-officer = Hazte oficial
 
 ﻿# master.footer ###############################################################
 

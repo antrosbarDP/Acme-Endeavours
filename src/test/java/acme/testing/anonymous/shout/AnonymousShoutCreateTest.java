@@ -27,13 +27,17 @@ public class AnonymousShoutCreateTest extends AcmeWorkPlansTest {
 	@ParameterizedTest
 	@CsvFileSource(resources = "/anonymous/shout/create-positive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void createPositive(final int recordIndex, final String author, final String text, final String link) {
+	public void createPositive(final int recordIndex, final String author, final String text, final String link, final String tracker, final String deadline, final String budget, final String important) {
 
 		super.clickOnMenu("Anonymous", "Create Shouts");
 
 		super.fillInputBoxIn("author", author);
 		super.fillInputBoxIn("text", text);
 		super.fillInputBoxIn("link", link);
+		super.fillInputBoxIn("budget", budget);
+		super.fillInputBoxIn("important", important);
+		super.fillInputBoxIn("tracker", tracker);
+		super.fillInputBoxIn("deadline", deadline);
 		super.clickOnSubmitButton("Create");
 
 		super.clickOnMenu("Anonymous", "List Shouts");
@@ -48,7 +52,7 @@ public class AnonymousShoutCreateTest extends AcmeWorkPlansTest {
 	@ParameterizedTest
 	@CsvFileSource(resources = "/anonymous/shout/create-negative.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(20)
-	public void createNegative(final int recordIndex, final String author, final String text, final String link) {
+	public void createNegative(final int recordIndex, final String author, final String text, final String link, final String tracker, final String deadline, final String budget, final String important) {
 		
 
 		super.clickOnMenu("Anonymous", "Create Shouts");
@@ -56,6 +60,10 @@ public class AnonymousShoutCreateTest extends AcmeWorkPlansTest {
 		super.fillInputBoxIn("author", author);
 		super.fillInputBoxIn("text", text);
 		super.fillInputBoxIn("link", link);
+		super.fillInputBoxIn("budget", budget);
+		super.fillInputBoxIn("important", important);
+		super.fillInputBoxIn("tracker", tracker);
+		super.fillInputBoxIn("deadline", deadline);
 		super.clickOnSubmitButton("Create");
 
 		super.checkErrorsExist();

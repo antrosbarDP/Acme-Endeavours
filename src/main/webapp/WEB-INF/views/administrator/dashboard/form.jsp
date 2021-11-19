@@ -28,7 +28,7 @@
 			<acme:message code="administrator.dashboard.form.label.totalPublic"/>
 		</th>
 		<td>
-			<acme:print value="${totalPublicTasks}"/>
+			<acme:print value="${totalPublicDuties}"/>
 		</td>
 	</tr>
 	<tr>
@@ -36,7 +36,7 @@
 			<acme:message code="administrator.dashboard.form.label.totalPrivate"/>
 		</th>
 		<td>
-			<acme:print value="${totalPrivateTasks}"/>
+			<acme:print value="${totalPrivateDuties}"/>
 		</td>
 	</tr>
 	<tr>
@@ -44,7 +44,7 @@
 			<acme:message code="administrator.dashboard.form.label.totalFinished"/>
 		</th>
 		<td>
-			<acme:print value="${totalFinishedTasks}"/>
+			<acme:print value="${totalFinishedDuties}"/>
 		</td>
 	</tr>
 	<tr>
@@ -52,7 +52,7 @@
 			<acme:message code="administrator.dashboard.form.label.totalUnfinished"/>
 		</th>
 		<td>
-			<acme:print value="${totalUnfinishedTasks}"/>
+			<acme:print value="${totalUnfinishedDuties}"/>
 		</td>
 	</tr>
 	<tr>
@@ -117,6 +117,78 @@
 		</th>
 		<td>
 			<acme:print value="${standardDeviationExecutionPeriod}"/>
+		</td>
+	</tr>
+	
+	<tr>
+		<th scope="row">
+			<acme:message code="administrator.dashboard.form.label.ratioImportantShouts"/>
+		</th>
+		<td>
+			<acme:print value="${ratioImportantShouts}"/>
+		</td>
+	</tr>
+	
+	<tr>
+		<th scope="row">
+			<acme:message code="administrator.dashboard.form.label.ratioBudget0Shouts"/>
+		</th>
+		<td>
+			<acme:print value="${ratioBudget0Shouts}"/>
+		</td>
+	</tr>
+	
+	<tr>
+		<th scope="row">
+			<acme:message code="administrator.dashboard.form.label.sdShoutEUR"/>
+		</th>
+		<td>
+			<acme:print value="${standardDeviationShoutEUR}"/>
+		</td>
+	</tr>
+	
+	<tr>
+		<th scope="row">
+			<acme:message code="administrator.dashboard.form.label.avgShoutEUR"/>
+		</th>
+		<td>
+			<acme:print value="${averageShoutEUR}"/>
+		</td>
+	</tr>
+	
+	<tr>
+		<th scope="row">
+			<acme:message code="administrator.dashboard.form.label.sdShoutGBP"/>
+		</th>
+		<td>
+			<acme:print value="${standardDeviationShoutGBP}"/>
+		</td>
+	</tr>
+	
+	<tr>
+		<th scope="row">
+			<acme:message code="administrator.dashboard.form.label.avgShoutGBP"/>
+		</th>
+		<td>
+			<acme:print value="${averageShoutGBP}"/>
+		</td>
+	</tr>
+	
+	<tr>
+		<th scope="row">
+			<acme:message code="administrator.dashboard.form.label.sdShoutUSD"/>
+		</th>
+		<td>
+			<acme:print value="${standardDeviationShoutUSD}"/>
+		</td>
+	</tr>
+	
+	<tr>
+		<th scope="row">
+			<acme:message code="administrator.dashboard.form.label.avgShoutUSD"/>
+		</th>
+		<td>
+			<acme:print value="${averageShoutUSD}"/>
 		</td>
 	</tr>
 	

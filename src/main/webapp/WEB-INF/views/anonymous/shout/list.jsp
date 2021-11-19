@@ -17,9 +17,13 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:list readonly="true">
-	<acme:list-column code="anonymous.shout.list.label.moment" path="moment" width="20%"/>
-	<acme:list-column code="anonymous.shout.list.label.author" path="author" width="20%"/>
-	<acme:list-column code="anonymous.shout.list.label.text" path="text" width="60%"/>		
+	<acme:list-column code="anonymous.shout.list.label.moment" path="moment" width="10%"/>
+	<acme:list-column code="anonymous.shout.list.label.author" path="author" width="10%"/>
+	<acme:list-column code="anonymous.shout.list.label.text" path="text" width="25%"/>	
+	<acme:list-column code="anonymous.shout.list.label.tremmer.tracker" path="tremmer.tracker" width="25%"/>
+	<acme:list-column code="anonymous.shout.list.label.tremmer.budget" path="tremmer.budget" width="10%"/>
+	<acme:list-column code="anonymous.shout.list.label.tremmer.deadline" path="tremmer.deadline" width="10%"/>
+	<acme:list-column code="anonymous.shout.list.label.tremmer.important" path="tremmer.important" width="10%"/>		
 </acme:list>
 
 

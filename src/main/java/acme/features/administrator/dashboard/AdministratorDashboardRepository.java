@@ -17,28 +17,38 @@ import java.util.Collection;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import acme.entities.tasks.Task;
+import acme.entities.duties.Duty;
+import acme.entities.shouts.Shout;
 import acme.framework.repositories.AbstractRepository;
 
 @Repository
 public interface AdministratorDashboardRepository extends AbstractRepository {
 
-	@Query("select t from Task t")
-	Collection<Task> findMany();
+	@Query("select t from Duty t")
+	Collection<Duty> findMany();
 	
-	@Query("select t from Task t where t.id = ?1")
-	Task findOneById(int id);
+	@Query("select t from Duty t where t.id = ?1")
+	Duty findOneById(int id);
 	
-	@Query("select t from Task t where (t.isPublic = TRUE)")
-	Collection<Task> findManyPublic();
+	@Query("select t from Duty t where (t.isPublic = TRUE)")
+	Collection<Duty> findManyPublic();
 	
-	@Query("select t from Task t where (t.isPublic = FALSE)")
-	Collection<Task> findManyPrivate();
+	@Query("select t from Duty t where (t.isPublic = FALSE)")
+	Collection<Duty> findManyPrivate();
 	
-	@Query("select t from Task t where (t.isFinished = FALSE)")
-	Collection<Task> findManyUnfinished();
+	@Query("select t from Duty t where (t.isFinished = FALSE)")
+	Collection<Duty> findManyUnfinished();
 	
-	@Query("select t from Task t where (t.isFinished = TRUE)")
-	Collection<Task> findManyFinished();
+	@Query("select t from Duty t where (t.isFinished = TRUE)")
+	Collection<Duty> findManyFinished();
+	
+	@Query("select s from Shout s ")
+	Collection<Shout> findManyShouts();
+	
+	@Query("select s from Shout s where (s.tremmer.important = TRUE)")
+	Collection<Shout> findManyImportant();
+	
+	@Query("select s from Shout s where (s.tremmer.budget.amount = 0)")
+	Collection<Shout> findManyBudget0();
 
 }

@@ -27,7 +27,7 @@ public class AuthenticatedManagerCreateTest extends AcmeWorkPlansTest {
 		super.signIn("userprueba", "passprueba0");
 		super.clickOnMenu("Account", "Become a manager");
 		super.clickOnSubmitButton("Register");
-		super.clickOnMenu("Account", "Manager data");
+		super.clickOnMenu("Account", "Officer data");
 		super.checkButtonExists("Update");
 		
 		super.signOut();

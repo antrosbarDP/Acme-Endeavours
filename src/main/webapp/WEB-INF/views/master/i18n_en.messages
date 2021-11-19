@@ -16,7 +16,7 @@ master.banner.background = #FFE97F
 
 master.welcome.title = Welcome!
 master.welcome.text = \
-	Welcome to Acme Work Plans! For all your planning needs!
+	Welcome to Acme Endeavours! The best way to handle your endeavours.
 
 # master.menu #################################################################
 
@@ -30,12 +30,12 @@ master.menu.sign-out = Sign out
 master.menu.anonymous = Anonymous
 master.menu.anonymous.shout.create = Create Shouts
 master.menu.anonymous.shout.list = List Shouts
-master.menu.anonymous.task.list = List Tasks
+master.menu.anonymous.duty.list = List Duties
 
 # master.menu.authenticated #######################################################
 
 master.menu.authenticated = User
-master.menu.authenticated.task.list = List Tasks
+master.menu.authenticated.duty.list = List Duties
 
 # master.menu.administrator ###################################################
 
@@ -45,7 +45,7 @@ master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.populate-initial = Populate DB (initial)
 master.menu.administrator.populate-sample = Populate DB (samples)
 master.menu.administrator.shutdown = Shut down
-master.menu.administrator.dashboard = Dashboard
+
 
 
 
@@ -53,8 +53,8 @@ master.menu.administrator.dashboard = Dashboard
 
 master.menu.user-account = Account
 master.menu.user-account.general-data = General data
-master.menu.user-account.manager = Manager data
-master.menu.user-account.become-manager = Become a manager
+master.menu.user-account.officer = Officer data
+master.menu.user-account.become-officer = Become a officer
 
 # master.footer ###############################################################
 
@@ -72,8 +72,8 @@ master.footer.label.spanish = Spanish
 
 master.company.title = The company
 master.company.text = \
-	Acme Work Plans, Inc. is a fictitious company
-master.company.name = Acme Work Plans, Inc.
+	Acme Endeavours, Inc. is a fictitious company
+master.company.name = Acme Endeavours, Inc.
 master.company.address = Number Street, City, State, Country
 master.company.phone = +000 123 456
 master.company.email = contact@acme.com

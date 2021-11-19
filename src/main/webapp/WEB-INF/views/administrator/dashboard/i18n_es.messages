@@ -11,10 +11,10 @@
 administrator.dashboard.form.title.show = Panel de indicadores
 
 administrator.dashboard.form.title.general-indicators = Indicadores generales
-administrator.dashboard.form.label.totalPublic = Tareas públicas totales
-administrator.dashboard.form.label.totalFinished = Tareas finalizadas totales
-administrator.dashboard.form.label.totalUnfinished = Tareas sin finalizar totales
-administrator.dashboard.form.label.totalPrivate = Tareas privadas totales
+administrator.dashboard.form.label.totalPublic = Deberes públicas totales
+administrator.dashboard.form.label.totalFinished = Deberes finalizadas totales
+administrator.dashboard.form.label.totalUnfinished = Deberes sin finalizar totales
+administrator.dashboard.form.label.totalPrivate = Deberes privadas totales
 administrator.dashboard.form.label.avgPeriod = Días de ejecución medios
 administrator.dashboard.form.label.maxPeriod = Días de ejecución máximos
 administrator.dashboard.form.label.minPeriod = Días de ejecución mínimos
@@ -23,3 +23,12 @@ administrator.dashboard.form.label.avgWorkload = Horas de trabajo medias
 administrator.dashboard.form.label.maxWorkload = Horas de trabajo máximas
 administrator.dashboard.form.label.minWorkload = Horas de trabajo mínimas
 administrator.dashboard.form.label.sdWorkload = Deviación estándar de las horas de trabajo
+
+administrator.dashboard.form.label.ratioImportantShouts = Ratio de shouts con tremmers importantes
+administrator.dashboard.form.label.ratioBudget0Shouts = Ratio de shouts con tremmers de presupuesto 0
+administrator.dashboard.form.label.sdShoutEUR = Desviación estándar de presupuestos EUR
+administrator.dashboard.form.label.avgShoutEUR = Media de presupuestos EUR
+administrator.dashboard.form.label.sdShoutUSD = Desviación estándar de presupuestos USD
+administrator.dashboard.form.label.avgShoutUSD = Media de presupuestos USD
+administrator.dashboard.form.label.sdShoutGBP = Desviación estándar de presupuestos GBP
+administrator.dashboard.form.label.avgShoutGBP = Media de presupuestos GBP

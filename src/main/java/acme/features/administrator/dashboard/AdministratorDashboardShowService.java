@@ -18,7 +18,8 @@ import java.util.stream.DoubleStream;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.tasks.Task;
+import acme.entities.duties.Duty;
+import acme.entities.shouts.Shout;
 import acme.forms.Dashboard;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
@@ -50,10 +51,10 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		assert model != null;
 
 		request.unbind(entity, model, //
-									"totalPublicTasks",
-								"totalPrivateTasks",
-								"totalFinishedTasks",
-								"totalUnfinishedTasks",
+									"totalPublicDuties",
+								"totalPrivateDuties",
+								"totalFinishedDuties",
+								"totalUnfinishedDuties",
 								"averageExecutionPeriod",
 								"averageWorkload",
 								"maximumExecutionPeriod",
@@ -61,18 +62,26 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 								"maximumWorkload",
 								"minimumWorkload",
 								"standardDeviationWorkload",
-							"standardDeviationExecutionPeriod");
+							"standardDeviationExecutionPeriod",
+							"standardDeviationShoutEUR",
+							"averageShoutEUR",
+								"standardDeviationShoutUSD",
+								"averageShoutUSD",
+								"standardDeviationShoutGBP",
+								"averageShoutGBP",
+								"ratioImportantShouts",
+								"ratioBudget0Shouts");
 	}
 
 	@Override
 	public Dashboard findOne(final Request<Dashboard> request) {
 		assert request != null;
 
-		Dashboard result;
-		final Double						totalPublicTasks;
-		final Double						totalPrivateTasks;
-		final Double						totalFinishedTasks;
-		final Double						totalUnfinishedTasks;
+		final Dashboard result;
+		final Double						totalPublicDuties;
+		final Double						totalPrivateDuties;
+		final Double						totalFinishedDuties;
+		final Double						totalUnfinishedDuties;
 		final Double						averageExecutionPeriod;
 		final Double						averageWorkload;
 		final Double						maximumExecutionPeriod;
@@ -81,20 +90,42 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		final Double						minimumWorkload;
 		final Double						standardDeviationWorkload;
 		final Double						standardDeviationExecutionPeriod;
+		final Double						standardDeviationShoutEUR;
+		final Double						averageShoutEUR;
+		final Double						standardDeviationShoutUSD;
+		final Double						averageShoutUSD;
+		final Double						standardDeviationShoutGBP;
+		final Double						averageShoutGBP;
+		final Double						ratioImportantShouts;
+		final Double						ratioBudget0Shouts;
 
-		final Collection<Task> tasks =  this.repository.findMany();
-		totalPublicTasks = (double) this.repository.findManyPublic().size();
-		totalPrivateTasks = (double) this.repository.findManyPrivate().size();
-		totalFinishedTasks = (double) this.repository.findManyFinished().size();
-		totalUnfinishedTasks = (double) this.repository.findManyUnfinished().size();
-		averageExecutionPeriod = tasks.stream().mapToDouble(t->t.getExecutionPeriod()).average().getAsDouble();
-		maximumExecutionPeriod = tasks.stream().mapToDouble(t->t.getExecutionPeriod()).max().getAsDouble();
-		minimumExecutionPeriod = tasks.stream().mapToDouble(t->t.getExecutionPeriod()).min().getAsDouble();
-		standardDeviationExecutionPeriod = this.standardDeviation(tasks.size(), averageExecutionPeriod, tasks.stream().mapToDouble(t->t.getExecutionPeriod()));
-		averageWorkload = tasks.stream().mapToDouble(t->t.getWorkload()).average().getAsDouble();
-		maximumWorkload = tasks.stream().mapToDouble(t->t.getWorkload()).max().getAsDouble();
-		minimumWorkload = tasks.stream().mapToDouble(t->t.getWorkload()).min().getAsDouble();
-		standardDeviationWorkload = this.standardDeviation(tasks.size(), averageWorkload, tasks.stream().mapToDouble(t->t.getWorkload()));
+		final Collection<Duty> duties =  this.repository.findMany();
+		final Collection<Shout> shouts =  this.repository.findManyShouts();
+		totalPublicDuties = (double) this.repository.findManyPublic().size();
+		totalPrivateDuties = (double) this.repository.findManyPrivate().size();
+		totalFinishedDuties = (double) this.repository.findManyFinished().size();
+		totalUnfinishedDuties = (double) this.repository.findManyUnfinished().size();
+		ratioImportantShouts = (double) this.repository.findManyImportant().size()/shouts.size();
+		ratioBudget0Shouts = (double) this.repository.findManyBudget0().size()/shouts.size();
+		for (final Shout s:shouts){
+			System.out.println(s.getTremmer().getBudget().getCurrency());
+
+		}
+		averageShoutGBP = shouts.stream().filter(s->s.getTremmer().getBudget().getCurrency().equals("GBP")).mapToDouble(s->s.getTremmer().getBudget().getAmount()).average().orElse(0);
+		averageShoutEUR = shouts.stream().filter(s->s.getTremmer().getBudget().getCurrency().equals("EUR")).mapToDouble(s->s.getTremmer().getBudget().getAmount()).average().orElse(0);
+		averageShoutUSD = shouts.stream().filter(s->s.getTremmer().getBudget().getCurrency().equals("USD")).mapToDouble(s->s.getTremmer().getBudget().getAmount()).average().orElse(0);
+		averageExecutionPeriod = duties.stream().mapToDouble(t->t.getExecutionPeriod()).average().orElse(0);
+		maximumExecutionPeriod = duties.stream().mapToDouble(t->t.getExecutionPeriod()).max().orElse(0);
+		minimumExecutionPeriod = duties.stream().mapToDouble(t->t.getExecutionPeriod()).min().orElse(0);
+		standardDeviationExecutionPeriod = this.standardDeviation(duties.size(), averageExecutionPeriod, duties.stream().mapToDouble(t->t.getExecutionPeriod()));
+		averageWorkload = duties.stream().mapToDouble(t->t.getWorkload()).average().orElse(0);
+		maximumWorkload = duties.stream().mapToDouble(t->t.getWorkload()).max().orElse(0);
+		minimumWorkload = duties.stream().mapToDouble(t->t.getWorkload()).min().orElse(0);
+		standardDeviationWorkload = this.standardDeviation(duties.size(), averageWorkload, duties.stream().mapToDouble(t->t.getWorkload()));
+		standardDeviationShoutEUR = this.standardDeviation(shouts.size(), averageShoutEUR, shouts.stream().filter(s->s.getTremmer().getBudget().getCurrency().equals("EUR")).mapToDouble(s->s.getTremmer().getBudget().getAmount()));
+		standardDeviationShoutUSD = this.standardDeviation(shouts.size(), averageShoutUSD, shouts.stream().filter(s->s.getTremmer().getBudget().getCurrency().equals("USD")).mapToDouble(s->s.getTremmer().getBudget().getAmount()));
+		standardDeviationShoutGBP = this.standardDeviation(shouts.size(), averageShoutGBP, shouts.stream().filter(s->s.getTremmer().getBudget().getCurrency().equals("GBP")).mapToDouble(s->s.getTremmer().getBudget().getAmount()));
+		
 		
 
 		result = new Dashboard();
@@ -106,10 +137,18 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		result.setMinimumWorkload(minimumWorkload);
 		result.setStandardDeviationExecutionPeriod(standardDeviationExecutionPeriod);
 		result.setStandardDeviationWorkload(standardDeviationWorkload);
-		result.setTotalFinishedTasks(totalFinishedTasks);
-		result.setTotalPrivateTasks(totalPrivateTasks);
-		result.setTotalUnfinishedTasks(totalUnfinishedTasks);
-		result.setTotalPublicTasks(totalPublicTasks);
+		result.setTotalFinishedDuties(totalFinishedDuties);
+		result.setTotalPrivateDuties(totalPrivateDuties);
+		result.setTotalUnfinishedDuties(totalUnfinishedDuties);
+		result.setTotalPublicDuties(totalPublicDuties);
+		result.setAverageShoutEUR(averageShoutEUR);
+		result.setAverageShoutGBP(averageShoutGBP);
+		result.setAverageShoutUSD(averageShoutUSD);
+		result.setStandardDeviationShoutEUR(standardDeviationShoutEUR);
+		result.setStandardDeviationShoutUSD(standardDeviationShoutUSD);
+		result.setStandardDeviationShoutGBP(standardDeviationShoutGBP);
+		result.setRatioBudget0Shouts(ratioBudget0Shouts);
+		result.setRatioImportantShouts(ratioImportantShouts);
 
 		return result;
 	}
