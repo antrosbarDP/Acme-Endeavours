@@ -1,13 +1,9 @@
-recordIndex,author,text,link,tracker,deadline,budget,important
-0,Paco,jojojo,http://www.example.com,21-1009-75,2021/11/09 14:15,EUR 48.23,true
-0,Un señor con un nombre demasiado largo,Así sí,http://www.example.com,21-1009-76,2021/11/09 14:16,USD 25.24,false
-0,Eddard Stark,,,21-1009-77,2021/11/09 14:17,GBP 29.00,true
+recordIndex,author,text,link
+0,Paco,jojojo,http://www.example.com
+0,Un señor con un nombre demasiado largo,Así sí,http://www.example.com
+0,Eddard Stark,,
 0,Anónimo,"What is Lorem Ipsum?
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
 Why do we use it?
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",,21-1009-78,2021/11/09 14:18,EUR 50.00,false
-0,Yo mismo,Prueba,,fgfadgfdgadfgafg,2021/11/09 14:17,EUR 50.00,false
-0,Yo mismo,Prueba,,21-1009-78,2021/11/09 14:17,RUP 43.00,true
-0,Yo mismo,Prueba,,21-1009-78,2021/11/09 14:17,USD -25.5,true
-0,Yo mismo,Prueba,,21-1009-78,2021/09/13 14:17,EUR 50.00,false
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
