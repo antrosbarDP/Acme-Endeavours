@@ -15,7 +15,7 @@ package acme.testing;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 
-public class PanicTest extends AcmeWorkPlansTest {
+public class PanicTest extends AcmeEndeavoursTest {
 
 	@Test
 	@Order(10)

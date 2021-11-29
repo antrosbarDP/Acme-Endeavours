@@ -120,77 +120,7 @@
 		</td>
 	</tr>
 	
-	<tr>
-		<th scope="row">
-			<acme:message code="administrator.dashboard.form.label.ratioImportantShouts"/>
-		</th>
-		<td>
-			<acme:print value="${ratioImportantShouts}"/>
-		</td>
-	</tr>
 	
-	<tr>
-		<th scope="row">
-			<acme:message code="administrator.dashboard.form.label.ratioBudget0Shouts"/>
-		</th>
-		<td>
-			<acme:print value="${ratioBudget0Shouts}"/>
-		</td>
-	</tr>
-	
-	<tr>
-		<th scope="row">
-			<acme:message code="administrator.dashboard.form.label.sdShoutEUR"/>
-		</th>
-		<td>
-			<acme:print value="${standardDeviationShoutEUR}"/>
-		</td>
-	</tr>
-	
-	<tr>
-		<th scope="row">
-			<acme:message code="administrator.dashboard.form.label.avgShoutEUR"/>
-		</th>
-		<td>
-			<acme:print value="${averageShoutEUR}"/>
-		</td>
-	</tr>
-	
-	<tr>
-		<th scope="row">
-			<acme:message code="administrator.dashboard.form.label.sdShoutGBP"/>
-		</th>
-		<td>
-			<acme:print value="${standardDeviationShoutGBP}"/>
-		</td>
-	</tr>
-	
-	<tr>
-		<th scope="row">
-			<acme:message code="administrator.dashboard.form.label.avgShoutGBP"/>
-		</th>
-		<td>
-			<acme:print value="${averageShoutGBP}"/>
-		</td>
-	</tr>
-	
-	<tr>
-		<th scope="row">
-			<acme:message code="administrator.dashboard.form.label.sdShoutUSD"/>
-		</th>
-		<td>
-			<acme:print value="${standardDeviationShoutUSD}"/>
-		</td>
-	</tr>
-	
-	<tr>
-		<th scope="row">
-			<acme:message code="administrator.dashboard.form.label.avgShoutUSD"/>
-		</th>
-		<td>
-			<acme:print value="${averageShoutUSD}"/>
-		</td>
-	</tr>
 	
 </table>
 

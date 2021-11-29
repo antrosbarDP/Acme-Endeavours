@@ -24,13 +24,6 @@ administrator.dashboard.form.label.maxWorkload = Maximum Workload Hours
 administrator.dashboard.form.label.minWorkload = Minimum Workload Hours
 administrator.dashboard.form.label.sdWorkload = Standard Deviation of Workload Hours
 
-administrator.dashboard.form.label.ratioImportantShouts = Ratio of Shouts with important tremmers
-administrator.dashboard.form.label.ratioBudget0Shouts = Ratio of Shouts with budget 0 tremmer
-administrator.dashboard.form.label.sdShoutEUR = Standard deviation of EUR budgets
-administrator.dashboard.form.label.avgShoutEUR = Average of EUR budgets
-administrator.dashboard.form.label.sdShoutUSD = Standard deviation of USD budgets
-administrator.dashboard.form.label.avgShoutUSD = Average of USD budgets
-administrator.dashboard.form.label.sdShoutGBP = Standard deviation of GBP budgets
-administrator.dashboard.form.label.avgShoutGBP = Average of GBP budgets
+
 
 

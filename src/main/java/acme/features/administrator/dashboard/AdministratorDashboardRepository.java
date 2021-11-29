@@ -18,7 +18,6 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import acme.entities.duties.Duty;
-import acme.entities.shouts.Shout;
 import acme.framework.repositories.AbstractRepository;
 
 @Repository
@@ -42,13 +41,7 @@ public interface AdministratorDashboardRepository extends AbstractRepository {
 	@Query("select t from Duty t where (t.isFinished = TRUE)")
 	Collection<Duty> findManyFinished();
 	
-	@Query("select s from Shout s ")
-	Collection<Shout> findManyShouts();
 	
-	@Query("select s from Shout s where (s.tremmer.important = TRUE)")
-	Collection<Shout> findManyImportant();
 	
-	@Query("select s from Shout s where (s.tremmer.budget.amount = 0)")
-	Collection<Shout> findManyBudget0();
 
 }

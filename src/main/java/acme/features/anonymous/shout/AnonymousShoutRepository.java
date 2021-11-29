@@ -27,8 +27,6 @@ public interface AnonymousShoutRepository extends AbstractRepository {
 	@Query("select s from Shout s")
 	Collection<Shout> findMany();
 	
-	@Query("select s from Shout s where s.tremmer.tracker = ?1")
-	Collection<Shout> findOneByTracker(String tracker);
 	
 	@Query("select s from Shout s where s.moment >= ?1")
 	Collection<Shout> findManyByDate(Date deadline);

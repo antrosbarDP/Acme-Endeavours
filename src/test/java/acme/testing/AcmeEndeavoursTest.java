@@ -15,7 +15,7 @@ package acme.testing;
 import org.hibernate.internal.util.StringHelper;
 import org.junit.jupiter.api.BeforeAll;
 
-public class AcmeWorkPlansTest extends AcmeTest {
+public class AcmeEndeavoursTest extends AcmeTest {
 
 	@Override
 	@BeforeAll

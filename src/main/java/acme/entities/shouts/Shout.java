@@ -3,7 +3,6 @@ package acme.entities.shouts;
 import java.util.Date;
 
 import javax.persistence.Entity;
-import javax.persistence.OneToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.constraints.NotBlank;
@@ -50,6 +49,5 @@ public class Shout extends DomainEntity {
 		
 	// Relationships ----------------------------------------------------------
 	
-	@OneToOne(optional=false)
-	protected Tremmer tremmer;
+	
 }

@@ -15,9 +15,9 @@ package acme.testing.authenticated.manager;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 
-import acme.testing.AcmeWorkPlansTest;
+import acme.testing.AcmeEndeavoursTest;
 
-public class AuthenticatedManagerCreateTest extends AcmeWorkPlansTest {
+public class AuthenticatedManagerCreateTest extends AcmeEndeavoursTest {
 
 	@Test
 	@Order(10)

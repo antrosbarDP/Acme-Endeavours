@@ -12,10 +12,7 @@ anonymous.shout.list.label.moment = Fecha
 anonymous.shout.list.label.author = Autor
 anonymous.shout.list.label.text = Texto
 
-anonymous.shout.list.label.tremmer.tracker = Tremmer-Tracker
-anonymous.shout.list.label.tremmer.budget = Tremmer-Presupuesto
-anonymous.shout.list.label.tremmer.deadline = Tremmer-Fecha límite
-anonymous.shout.list.label.tremmer.important = Tremmer-Importante
+
 
 anonymous.shout.form.label.link = Link
 anonymous.shout.form.label.author = Autor
@@ -24,14 +21,3 @@ anonymous.shout.form.label.text = Texto
 anonymous.shout.form.button.create = Crear
 anonymous.shout.form.button.return = Volver
 
-anonymous.shout.label.tremmer.tracker = Tremmer-Tracker
-anonymous.shout.label.tremmer.deadline = Tremmer-Fecha límite
-anonymous.shout.label.tremmer.budget = Tremmer-Presupuesto
-anonymous.shout.label.tremmer.important = Tremmer-Importante
-anonymous.shout.error.pattern-no-match = El tracker debe concordar con la expresión “^yy-mmdd-\d{2,4}$” (donde yy, mm, y dd se refieren al año, mes y día en el que shout se crea)
-anonymous.shout.error.null-budget = El presupuesto es obligatorio
-anonymous.shout.error.null-deadline = La fecha límite es obligatoria
-anonymous.shout.error.future-week = La fecha límite debe ser al menos una semana después de crearse el shout
-anonymous.shout.error.negative-amount = El presupuesto debe ser positivo
-anonymous.shout.error.wrong-currency = Las únicas monedas válidas son EUR, USD, y GBP
-anonymous.shout.error.repeated-tracker = El tracker ya existe (debe ser único)

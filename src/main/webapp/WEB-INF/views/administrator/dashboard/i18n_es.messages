@@ -24,11 +24,4 @@ administrator.dashboard.form.label.maxWorkload = Horas de trabajo máximas
 administrator.dashboard.form.label.minWorkload = Horas de trabajo mínimas
 administrator.dashboard.form.label.sdWorkload = Deviación estándar de las horas de trabajo
 
-administrator.dashboard.form.label.ratioImportantShouts = Ratio de shouts con tremmers importantes
-administrator.dashboard.form.label.ratioBudget0Shouts = Ratio de shouts con tremmers de presupuesto 0
-administrator.dashboard.form.label.sdShoutEUR = Desviación estándar de presupuestos EUR
-administrator.dashboard.form.label.avgShoutEUR = Media de presupuestos EUR
-administrator.dashboard.form.label.sdShoutUSD = Desviación estándar de presupuestos USD
-administrator.dashboard.form.label.avgShoutUSD = Media de presupuestos USD
-administrator.dashboard.form.label.sdShoutGBP = Desviación estándar de presupuestos GBP
-administrator.dashboard.form.label.avgShoutGBP = Media de presupuestos GBP
+
