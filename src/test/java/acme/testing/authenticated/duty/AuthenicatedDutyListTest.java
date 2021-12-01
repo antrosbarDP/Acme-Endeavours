@@ -10,7 +10,7 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.testing.authenticated.task;
+package acme.testing.authenticated.duty;
 
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -18,19 +18,19 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 
 import acme.testing.AcmeEndeavoursTest;
 
-public class AuthenicatedTaskListTest extends AcmeEndeavoursTest {
+public class AuthenicatedDutyListTest extends AcmeEndeavoursTest {
 
 	// Lifecycle management ---------------------------------------------------
 	
 	// Test cases -------------------------------------------------------------
 	
 	@ParameterizedTest
-	@CsvFileSource(resources = "/authenticated/task/list.csv", encoding = "utf-8", numLinesToSkip = 1)
+	@CsvFileSource(resources = "/authenticated/duty/list.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
 	public void list(final int recordIndex, final String title, final String description, final String executionPeriod, final String link, final String workloadHours, final String workloadMinutes, final String workload) {		
-		super.signIn("manager1", "manager1");
+		super.signIn("officer1", "officer1");
 		
-		super.clickOnMenu("User", "List Tasks");		
+		super.clickOnMenu("User", "List Duties");		
 		
 		super.checkColumnHasValue(recordIndex, 0, title);
 		super.checkColumnHasValue(recordIndex, 1, executionPeriod);

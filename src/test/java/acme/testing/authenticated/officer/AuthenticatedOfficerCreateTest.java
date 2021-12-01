@@ -10,14 +10,14 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.testing.authenticated.manager;
+package acme.testing.authenticated.officer;
 
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 
 import acme.testing.AcmeEndeavoursTest;
 
-public class AuthenticatedManagerCreateTest extends AcmeEndeavoursTest {
+public class AuthenticatedOfficerCreateTest extends AcmeEndeavoursTest {
 
 	@Test
 	@Order(10)
@@ -25,7 +25,7 @@ public class AuthenticatedManagerCreateTest extends AcmeEndeavoursTest {
 		
 		super.signUp("userprueba", "passprueba0", "Antonio", "García", "something@msn.com", "123456789");
 		super.signIn("userprueba", "passprueba0");
-		super.clickOnMenu("Account", "Become a manager");
+		super.clickOnMenu("Account", "Become a officer");
 		super.clickOnSubmitButton("Register");
 		super.clickOnMenu("Account", "Officer data");
 		super.checkButtonExists("Update");
@@ -33,7 +33,7 @@ public class AuthenticatedManagerCreateTest extends AcmeEndeavoursTest {
 		super.signOut();
 	}
 	
-	//There's no extra info the user can submit when becoming a manager, so it's not possible to create a negative test case
+	//There's no extra info the user can submit when becoming an officer, so it's not possible to create a negative test case
 	
 	
 }

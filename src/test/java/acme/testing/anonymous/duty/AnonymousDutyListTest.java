@@ -10,7 +10,7 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.testing.anonymous.task;
+package acme.testing.anonymous.duty;
 
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -18,19 +18,19 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 
 import acme.testing.AcmeEndeavoursTest;
 
-public class AnonymousTaskListTest extends AcmeEndeavoursTest {
+public class AnonymousDutyListTest extends AcmeEndeavoursTest {
 
 	// Lifecycle management ---------------------------------------------------
 	
 	// Test cases -------------------------------------------------------------
 	
 	@ParameterizedTest
-	@CsvFileSource(resources = "/anonymous/task/list.csv", encoding = "utf-8", numLinesToSkip = 1)
+	@CsvFileSource(resources = "/anonymous/duty/list.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
 	public void list(final int recordIndex, final String title, final String description, final String executionPeriod, final String link, final String workloadHours, final String workloadMinutes, final String workload) {		
 		
 		
-		super.clickOnMenu("Anonymous", "List Tasks");		
+		super.clickOnMenu("Anonymous", "List Duties");		
 		
 		super.checkColumnHasValue(recordIndex, 0, title);
 		super.checkColumnHasValue(recordIndex, 1, executionPeriod);
