@@ -273,7 +273,7 @@ Shout
       <h>63</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Role&gt;&gt;
-Manager
+Officer
 --</panel_attributes>
     <additional_attributes/>
   </element>
@@ -291,13 +291,13 @@ Manager
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>217</x>
-      <y>343</y>
+      <x>175</x>
+      <y>336</y>
       <w>329</w>
       <h>182</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
-Task
+Duty
 --
 + title: String {NotBlank, Max(80)}
 + description: String {NotBlank, }

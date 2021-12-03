@@ -29,8 +29,8 @@
 	
 	<bean name="shout02" class="acme.entities.shouts.Shout">
 		<property name="moment" value="2021/11/24 23:59"  />
-		<property name="author" value="Leonardo Dicrapio" />
-		<property name="text" value="buenos dias" />
+		<property name="author" value="Leonardo Dicaprio" />
+		<property name="text" value="buenos días" />
 		<property name="link" value="http://www.example.com"/>
 	</bean>
 	
